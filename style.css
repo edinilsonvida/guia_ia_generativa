@@ -1,119 +1,155 @@
 :root {
-    --primary-green: #198754;
-    --dark-green: #0f5132;
-    --light-green: #e8f5e9;
-    --teal-custom: #20c997;
-    --hover-green: #146c43;
+  --primary-green: #198754;
+  --dark-green: #0f5132;
+  --light-green: #e8f5e9;
+  --teal-custom: #20c997;
+  --hover-green: #146c43;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9fafb;
-    color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
 }
 
 .bg-gradient-custom {
-    background: linear-gradient(135deg, var(--dark-green) 0%, var(--primary-green) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--dark-green) 0%,
+    var(--primary-green) 100%
+  );
 }
 
 .hero-section {
-    background: linear-gradient(rgba(15, 81, 50, 0.85), rgba(25, 135, 84, 0.7)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1951&q=80');
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    min-height: 400px;
+  background:
+    linear-gradient(rgba(15, 81, 50, 0.85), rgba(25, 135, 84, 0.7)),
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1951&q=80");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  min-height: 400px;
 }
 
 .text-dark-green {
-    color: var(--dark-green);
+  color: var(--dark-green);
 }
 
 .text-green {
-    color: var(--primary-green);
+  color: var(--primary-green);
 }
 
 .bg-green-light {
-    background-color: var(--light-green);
+  background-color: var(--light-green);
 }
 
 .bg-light-green {
-    background-color: #f1f8f3;
+  background-color: #f1f8f3;
 }
 
 .bg-teal {
-    background-color: var(--teal-custom);
+  background-color: var(--teal-custom);
 }
 
 .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 12px;
-    overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .hover-effect:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(25, 135, 84, 0.15) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(25, 135, 84, 0.15) !important;
 }
 
 .icon-box {
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
 }
 
 .card-horizontal-custom .rounded-start {
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
 .btn-outline-success {
-    border-color: var(--primary-green);
-    color: var(--primary-green);
+  border-color: var(--primary-green);
+  color: var(--primary-green);
 }
 
 .btn-outline-success:hover {
-    background-color: var(--primary-green);
-    color: white;
+  background-color: var(--primary-green);
+  color: white;
 }
 
 .animate-up {
-    animation: fadeInUp 0.8s ease-out forwards;
-    opacity: 0;
-    transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
-.delay-1 { animation-delay: 0.2s; }
-.delay-2 { animation-delay: 0.4s; }
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.bg-green-light {
+  background-color: #f0fdf4;
+}
+
+#plataforma .card {
+  transition: all 0.3s ease;
+}
+
+#plataforma .card:hover {
+  border: 1px solid var(--primary-green);
+}
+
+.bg-light-green {
+    background-color: #f1f8f3 !important;
+}
+
+.x-small {
+    font-size: 0.75rem;
+}
+
+.icon-box i {
+    line-height: 0;
+}
 
 @keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
-    .hero-section {
-        height: auto;
-        padding: 80px 0;
-    }
-    
-    .card-horizontal-custom .row {
-        flex-direction: column;
-        height: auto !important;
-    }
+  .hero-section {
+    height: auto;
+    padding: 80px 0;
+  }
 
-    .card-horizontal-custom .row > div {
-        width: 100%;
-        height: auto !important;
-    }
-    
-    .card-horizontal-custom .rounded-start {
-        border-radius: 12px 12px 0 0 !important;
-        padding: 2rem !important;
-    }
+  .card-horizontal-custom .row {
+    flex-direction: column;
+    height: auto !important;
+  }
+
+  .card-horizontal-custom .row > div {
+    width: 100%;
+    height: auto !important;
+  }
+
+  .card-horizontal-custom .rounded-start {
+    border-radius: 12px 12px 0 0 !important;
+    padding: 2rem !important;
+  }
 }
